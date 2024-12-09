@@ -1,0 +1,39 @@
+# Weight Input Variable
+weight = 41.5
+
+# Reminder of Premium Cost variable
+ground_shipping_premium_cost = 125
+
+
+# Ground Shipping Variables
+if weight <= 2:
+  print("GROUND Shipping Cost: $", weight * 1.50 + 20)
+  print("GROUND PREMIUM Shipping FLAT RATE Cost: $", ground_shipping_premium_cost)
+
+elif weight <= 6:
+  print("GROUND Shipping Cost: $", weight * 3.00 + 20)
+  print("GROUND PREMIUM Shipping FLAT RATE Cost: $", ground_shipping_premium_cost)
+
+elif weight <= 10:
+  print("GROUND Shipping Cost: $", weight * 4.00 + 20)
+  print("GROUND PREMIUM Shipping FLAT RATE Cost $", ground_shipping_premium_cost)
+
+elif weight > 10:
+  print("GROUND Shipping Cost: $", weight * 4.75 + 20)
+  print("GROUND PREMIUM Shipping FLAT RATE Cost: $", ground_shipping_premium_cost)
+
+
+# Drone Shipping Variables
+
+if weight <= 2:
+  print("DRONE Shipping Cost: $", weight * 4.50 + 0)
+
+elif weight <= 6:
+  print("DRONE Shipping Cost: $", weight * 9.00 + 0)
+
+elif weight <= 10:
+  print("DRONE Shipping Cost: $", weight * 12.00 + 0)
+
+elif weight > 10:
+  print("DRONE Shipping Cost: $", weight * 14.25 + 0)
+  
